@@ -1,0 +1,247 @@
+/* ____________________ Configurações gerais ____________________ */
+body{
+	font-family: Arial, sans-serif;
+	min-width: 320px;
+}
+
+img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* _____________________ Cabeçalho _____________________ */
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 20px;
+}
+
+#busca_cabecalho{
+	padding: 10px;
+	margin: 0 10px;
+}
+
+#busca_cabecalho input{
+	height: 25px;
+	width: 200px;
+	padding: 5px 25px;
+	background: transparent url(../images/lupa.jpg) no-repeat center left;
+	border-radius: 10px;
+	border: 1px solid #000;
+}
+
+#hed_right{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 35%;
+	padding: 10px;
+	
+}
+
+#txt_free{
+	color: #FF0000;
+	font-style: italic;
+	line-height: 25px;
+}
+
+#txt_free span{
+	font-size: 22px;
+}
+
+#bag_txt{
+	color: #C5A4B8;
+}
+
+#bag_txt span{
+	color: #FF0000;
+	font-weight: bold;
+}
+
+/* _________________________ Menu ________________________ */
+nav{
+	background: #4F336D;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	color: #B3ABB7;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#menu_nav ul {
+	display: flex;
+}
+
+#menu_nav a{
+	display: block;
+	padding: 20px 15px;
+	margin-right: 10px;
+}
+
+#menu_nav a:hover, #sing a:hover{
+	background: #422A53;
+	border-radius: 10px;
+}
+
+#sing a{
+	display: inline-block;
+	padding: 20px 10px;
+	margin: 5px;
+}
+
+
+/* _________________________ Seção produtos ________________________ */
+#produtos{
+	padding: 40px;
+}
+
+#produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+#sec_prod{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.prod_each{
+	width: 30%;
+	text-align: center;
+	font-weight: bold;
+	padding: 20px 10px;
+	margin-bottom: 30px;
+}
+
+.prod_each span{
+	color: #f00;
+}
+
+
+/* _________________________ Rodapé ________________________ */
+footer{
+	background: #E6E6E6;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#footer_left, #footer_right{
+	width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+/*lado esquerdo desktop*/
+
+#company ul{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+}
+
+#company li{
+	width: 30%;
+	margin-right: 5px;
+}
+
+#company a{
+	color: #f00;
+	text-decoration: none;
+	line-height: 20px;
+}
+
+
+#redes_sociais ul {
+	display: flex;
+	padding: 20px 0;
+}
+
+.text-ident{
+	text-indent: -9999px;
+	display: block;
+	width: 30px;
+	height: 31px;
+	padding-right: 20px;
+	margin-right: 10px;
+}
+
+#facebook a{
+	background: url(../images/ico-facebook.jpg) no-repeat center;
+}
+
+#twitter a{
+	background: url(../images/ico-twitter.jpg) no-repeat center;
+}
+
+#pinterest a{
+	background: url(../images/ico-pinterest.jpg) no-repeat center;
+}
+
+#tumblr a{
+	background: url(../images/ico-tumblr.jpg) no-repeat center;
+}
+
+#google a{
+	background: url(../images/ico-google-plus.jpg) no-repeat center;
+}
+
+#copy{
+	color: #666666;
+	margin-top: 20px;
+}
+
+
+/*lado direito desktop*/
+
+#right_content{
+	width: 90%;
+	background: #fff;
+	padding: 10px 10px 20px 20px;
+}
+
+#right_txt h3{
+	font-size: 22px;
+	font-style: italic;
+	padding: 20px 0 5px;
+}
+
+#right_txt p{
+	padding: 15px 0;
+	font-size: 16px;
+}
+
+#input_email{
+	display: flex;
+}
+
+#email input{
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-right: 15px;
+	border: 1px solid #000;
+}
+
+#botao input{
+	background: #D73A1E;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: none;
+}
+
+
+
+
+
+
+
+
