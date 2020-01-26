@@ -12,8 +12,21 @@ img {
 /* _____________________ Cabeçalho _____________________ */
 header{
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	padding: 30px 20px;
+}
+
+#botao_drop{
+	margin: 5px;
+	display: none;
+}
+
+#botao_drop div{
+	background: #4F336D;
+	width: 30px;
+	height: 3px;
+	margin: 2px 0;
 }
 
 #busca_cabecalho{
@@ -30,13 +43,23 @@ header{
 	border: 1px solid #000;
 }
 
+#busca02{
+	display: none;
+}
+
 #hed_right{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 35%;
 	padding: 10px;
-	
+}
+
+#bag{
+	display: flex;
+	align-items: center;
+	width: 40%;
+	justify-content: space-between;
 }
 
 #txt_free{
@@ -64,7 +87,7 @@ nav{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 20px;
+	padding: 0 10px;
 	color: #B3ABB7;
 }
 
@@ -80,7 +103,7 @@ nav a {
 
 #menu_nav a{
 	display: block;
-	padding: 20px 15px;
+	padding: 15px 10px;
 	margin-right: 10px;
 }
 
@@ -91,10 +114,22 @@ nav a {
 
 #sing a{
 	display: inline-block;
-	padding: 20px 10px;
+	padding: 15px 10px;
 	margin: 5px;
 }
 
+
+/* _________________________ Texto free shipping mobile ________________________ */
+#txt_mobile{
+	color: #575778;
+	background: #F0F0F0;
+	padding: 20px 30px;
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+	letter-spacing: 1.5px;
+	display: none;
+}
 
 /* _________________________ Seção produtos ________________________ */
 #produtos{
@@ -119,6 +154,11 @@ nav a {
 	font-weight: bold;
 	padding: 20px 10px;
 	margin-bottom: 30px;
+}
+
+.prod_each:hover{
+	border: 1px solid #BDBDBD;
+	box-shadow: 0 0 5px #000;
 }
 
 .prod_each span{
@@ -238,8 +278,173 @@ footer{
 	border: none;
 }
 
+/* _____________ Design responsivo ____________ */
+@media only screen and (max-width: 800px){
+	header{
+		padding: 10px 20px;
+	}
 
+	#botao_drop{
+		display: block;
+	}
 
+	#busca_cabecalho, #txt_free{
+		display: none;
+	}
+
+	nav{
+		flex-direction: column;
+		position: fixed;
+		width: 300px;
+		top: 0;
+		padding: 0;
+	}
+
+	#menu_nav{
+		width: 100%;
+	}
+
+	#topo_busca{
+		padding: 20px 10px;
+		background: #fff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	#busca02{
+		display: block;
+	}
+
+	#busca02 input{
+		height: 25px;
+		width: 200px;
+		padding: 5px 20px;
+		background: transparent url(../images/lupa.jpg) no-repeat center left;
+		border-radius: 10px;
+		border: 1px solid #000;
+	}
+
+	#fechar_menu{
+		cursor: pointer;
+	}
+
+	#fechar_menu div{
+		background: #4F336D;
+		width: 20px;
+		height: 3px;
+		margin: 2px 0;
+	}
+
+	#bar01{
+		transform: rotate(45deg);
+	}
+
+	#bar02{
+		transform: translate(-1px, -5px) rotate(-45deg);
+	}
+
+	#menu_nav ul{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#menu_nav li{
+		width: 100%;
+		border-bottom: 1px solid #fff;
+	}
+
+	#menu_nav a{
+		margin: 0;
+		padding-left: 40px;
+	}
+
+	#menu_nav a:hover{
+		border-radius: 0;
+	}
+
+	#hed_right{
+		text-align: center;
+		width: 20%;
+		padding: 0;
+	}
+
+	#bag{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#txt_mobile{
+		display: block;
+	}
+
+	/* rodape */
+	footer{
+		flex-direction: column-reverse;
+	}
+
+	#footer_left, #footer_right{
+		width: 100%;
+		text-align: center;
+	}
+
+	#company{
+		display: none;
+	}
+
+	#input_email{
+		justify-content: center;
+	}
+
+	#redes_sociais ul{
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	header{
+		padding: 10px;
+	}
+
+	#logo h1{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#hed_right{
+		width: 15%; 
+	}
+
+	#bag_txt{
+		font-size: 12px;
+	}
+
+	#txt_mobile{
+		font-size: 17px;
+		padding: 20px 10px;
+	}
+
+	.prod_each{
+		width: 100%;
+	}
+
+	#input_email{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#email{
+		margin-bottom: 15px;
+	}
+
+	.text-ident{
+		margin: 0;
+	}
+
+	#copy{
+		font-size: 14px;
+	}
+}
 
 
 

@@ -3,11 +3,18 @@
 	<head>
 		<title>Merlin's Potion</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header>
+			<div id="botao_drop">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
 			<div id="logo">
 				<h1>
 					<img src="images/logo.jpg">
@@ -24,18 +31,31 @@
 					<p>on order over $50</p>
 				</div>
 
-				<div>
-					<img src="images/bag.jpg">
-				</div>
+				<div id="bag">
+					<div>
+						<img src="images/bag.jpg">
+					</div>
 
-				<div id="bag_txt">
-					<p>BAG:<span> 1</span></p>
+					<div id="bag_txt">
+						<p>BAG:<span> 1</span></p>
+					</div>
 				</div>
 			</div>
 		</header>
 
 		<nav>
 			<div id="menu_nav">
+				<div id="topo_busca">
+					<div id="fechar_menu">
+						<div id="bar01"></div>
+						<div id="bar02"></div>
+					</div>
+
+					<div id="busca02">
+						<input type="txt">
+					</div>
+				</div>
+
 				<ul>
 					<li>
 						<a href="">Potion</a>
@@ -67,6 +87,10 @@
 				<a href="#">Sing In</a> or <a href="#">Sing Up</a>
 			</div>
 		</nav>
+
+		<section id="txt_mobile">
+			<p>Free shipping on order over $50</p>
+		</section>
 
 		<section id="produtos">
 			<h2>Potions</h2>
