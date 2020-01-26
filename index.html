@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<header>
-			<div id="botao_drop">
+			<div id="botao_drop" onclick="abrirMenu()">
 				<div></div>
 				<div></div>
 				<div></div>
@@ -31,24 +31,24 @@
 					<p>on order over $50</p>
 				</div>
 
-				<div id="bag">
+				<a href="#" id="bag">
 					<div>
 						<img src="images/bag.jpg">
 					</div>
 
 					<div id="bag_txt">
-						<p>BAG:<span> 1</span></p>
+						<p>BAG:<span id="num_bag"> 0</span></p>
 					</div>
-				</div>
+				</a>
 			</div>
 		</header>
 
-		<nav>
+		<nav id="menu_retratil">
 			<div id="menu_nav">
 				<div id="topo_busca">
-					<div id="fechar_menu">
-						<div id="bar01"></div>
-						<div id="bar02"></div>
+					<div id="fechar_menu" onclick="fecharMenu()">
+						<div class="bar01"></div>
+						<div class="bar02"></div>
 					</div>
 
 					<div id="busca02">
@@ -92,44 +92,87 @@
 			<p>Free shipping on order over $50</p>
 		</section>
 
+		<section class="pop_up">
+			<div class="popup_content">
+				<div class="fehar_pop" onclick="fechaPopUp()">
+					<div class="bar01"></div>
+					<div class="bar02"></div>
+				</div>
+
+				<div class="pop_img">
+					<img id="pop_img" src="">
+				</div>
+
+				<div class="pop_info">
+					<h3 class="title_info"></h3>
+
+					<div>
+						<h4>Use/Effect</h4>
+
+						<p>Causes the drinker to advence in age.</p>
+					</div>
+
+					<div>
+						<h4>Ingredients:</h4>
+
+						<p>Red Wine</p>
+						<p>Prune Juice</p>
+						<p>Hairy Fungus</p>
+						<p>Tortoise Shell</p>
+						<p>Caterpillar</p>
+						<p>Bat Tongue</p>
+					</div>
+
+					<div>
+						<h4>Price: </h4>
+						<p class="preco"></p>
+					</div>
+
+					<div onclick="numSacola()">
+						<input type="submit" class="adicionar_carrinho" value="ADD TO CART">
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section id="produtos">
 			<h2>Potions</h2>
 
 			<div id="sec_prod">
-				<div class="prod_each">
-					<img src="images/produtos/aging-potion.png">
+				<div class="prod_each" onclick="abrirPopUp01()">
+					<img id="img_prod01" src="images/produtos/aging-potion.png">
 
-					<p>Aging Potion - <span>$29.99</span></p>
+					<p><span id="nome_potion01">Aging Potion</span> - <span class="preco_potion" id="preco01">$29.99</span></p>
 				</div>
 
-				<div class="prod_each">
-					<img src="images/produtos/bulgeye-potion.png">
+				<div class="prod_each" onclick="abrirPopUp02()">
+					<img id="img_prod02" src="images/produtos/bulgeye-potion.png">
 
-					<p>Bulgeye Potion - <span>$19.99</span></p>
+					<p><span id="nome_potion02">Bulgeye Potion</span> - <span class="preco_potion" id="preco02">$19.99</span></p>
 				</div>
 
-				<div class="prod_each">
-					<img src="images/produtos/dragon-tonic.png">
+				<div class="prod_each" onclick="abrirPopUp03()">
+					<img id="img_prod03" src="images/produtos/dragon-tonic.png">
 
-					<p>Dragon Potion - <span>$69.99</span></p>
+					<p><span id="nome_potion03" class="nome_potion">Dragon Potion</span> - <span id="preco03" class="preco_potion">$69.99</span></p>
 				</div>
 
-				<div class="prod_each">
-					<img src="images/produtos/love-potion.png">
+				<div class="prod_each" onclick="abrirPopUp04()">
+					<img id="img_prod04" src="images/produtos/love-potion.png">
 
-					<p>Love Potion - <span>$29.99</span></p>
+					<p><span id="nome_potion04" class="nome_potion">Love Potion</span> - <span id="preco04" class="preco_potion">$29.99</span></p>
 				</div>
 
-				<div class="prod_each">
-					<img src="images/produtos/polyjuice-potion.png">
+				<div class="prod_each" onclick="abrirPopUp05()">
+					<img id="img_prod05" src="images/produtos/polyjuice-potion.png">
 
-					<p>Polyjuice Potion - <span>$99.99</span></p>
+					<p><span id="nome_potion05" class="nome_potion">Polyjuice Potion</span> - <span id="preco05" class="preco_potion">$99.99</span></p>
 				</div>
 
-				<div class="prod_each">
-					<img src="images/produtos/sleeping-draught.png">
+				<div class="prod_each" onclick="abrirPopUp06()">
+					<img id="img_prod06" src="images/produtos/sleeping-draught.png">
 
-					<p>Sleeping Potion - <span>$14.99</span></p>
+					<p><span id="nome_potion06" class="nome_potion">Sleeping Potion</span> - <span id="preco06" class="preco_potion">$14.99</span></p>
 				</div>
 			</div>
 		</section>
@@ -196,5 +239,7 @@
 				</div>
 			</div>
 		</footer>
+
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
