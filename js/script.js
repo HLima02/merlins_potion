@@ -88,9 +88,15 @@ function abrirPopUp06(){
 
 
 // Função para fechar pop up dos produtos
+var popUp = document.querySelector('.pop_up')
 function fechaPopUp(){
-	var popUp = document.querySelector('.pop_up')
 	popUp.style.display = 'none'
+}
+
+window.onclick = function(event){
+	if (event.target == popUp){
+		popUp.style.display = 'none'
+	}
 }
 
 
